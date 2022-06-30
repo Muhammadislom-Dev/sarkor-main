@@ -1,0 +1,35 @@
+.product__famous {
+    padding: 5vw 0;
+    background-image: url(../img/A.png);
+    background-size: 40vw;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.product__famous .product__slide {
+    padding: 1vw;
+}
+
+.product__famous .container {
+    display: flex;
+    gap: 3vw;
+    flex-direction: column;
+}
+
+@media(max-width: 768px) {
+    .product__famous{
+        background-image: none;
+        margin: 20vw 0;
+    }
+    .my__slide {
+        display: none;
+    }
+
+    .product__famous .mobile {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product__famous h1.title{
+        margin-bottom: 8vw;
+    }
+}

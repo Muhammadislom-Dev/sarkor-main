@@ -1,0 +1,92 @@
+.comment__card{
+    padding: 1vw;
+    border: 1px solid rgba(82, 80, 59, 0.1);
+    background-color: #fff;
+    margin: 5vw 1vw;
+    border-radius: .4vw;
+    -webkit-border-radius: .4vw;
+    -moz-border-radius: .4vw;
+    -ms-border-radius: .4vw;
+    -o-border-radius: .4vw;
+    min-width: 30vw;
+
+}
+.comment__card img{
+    width: 1.5vw;
+}
+.comment__card h1{
+    font-size: 1.2vw;
+    margin-top: 1vw;
+    font-weight: 400;
+}
+.comment__card p{
+    font-size: .9vw;
+    margin-top: .5vw;
+}
+.comment__card span{
+    padding: 1vw;
+    border-left: 1px solid #000;
+}
+.comment__card p.name{
+    font-size: 1vw;
+    padding: 0 .4vw;
+    border-left: 2px solid #156963;
+}
+.comment__card:hover{
+    box-shadow: 0px 4.79911px 27.5949px rgba(21, 105, 99, 0.2);
+    cursor: pointer;
+}
+.comment__card .star__row{
+    display: flex;
+}
+.comment__slider {
+    width: 95%;
+    margin-left: 12%;
+}
+.comment{
+    overflow: hidden;
+}
+.comment .slick-prev, .comment .slick-next{
+    top: auto;
+    bottom: 0;
+    width: 3vw;
+    height: 3vw;
+    border: #52503B solid 1px;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: url(../img/arrowleft.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.2vw;
+}
+.comment .slick-next{
+    left: 60%;
+    transform: rotate(180deg) translateY(1.5vw);
+    -webkit-transform: rotate(180deg) translateY(1.5vw);
+    -moz-transform: rotate(180deg) translateY(1.5vw);
+    -ms-transform: rotate(180deg) translateY(1.5vw);
+    -o-transform: rotate(180deg) translateY(1.5vw);
+}
+.comment .slick-prev{
+    left: 55%;
+}
+.comment .slick-prev:before, .comment .slick-next:before{
+    content: "";
+}
+.comment .slick-prev:hover, .comment .slick-prev:focus, .comment .slick-next:hover, .comment .slick-next:focus{
+    color: auto;
+    outline: none;
+    background-image: url(../img/arrowleft.svg);
+    background-repeat: no-repeat;
+    background-size: 1.2vw;
+    background-position: center;
+}
+@media(max-width: 768px){
+    .comment{
+        display: none;
+    }
+}

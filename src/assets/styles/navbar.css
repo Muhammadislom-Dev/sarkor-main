@@ -1,0 +1,118 @@
+nav {
+    background: #FFF9F3;
+    padding: 2vw 0;
+}
+
+nav .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 3vw;
+    align-items: center;
+
+}
+
+nav .row h1 {
+    color: #3E3E3E;
+    font-weight: 600;
+}
+
+nav .search {
+    padding: .5vw;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 5vw;
+    -webkit-border-radius: 5vw;
+    -moz-border-radius: 5vw;
+    -ms-border-radius: 5vw;
+    -o-border-radius: 5vw;
+}
+
+nav select {
+    font-size: 1vw;
+    outline: none;
+    cursor: pointer;
+    background-color: #F5F6F8;
+    border: none;
+    padding: .6vw 1vw;
+    color: rgb(56, 56, 56);
+    border-radius: 3vw;
+    -webkit-border-radius: 3vw;
+    -moz-border-radius: 3vw;
+    -ms-border-radius: 3vw;
+    -o-border-radius: 3vw;
+}
+
+nav input {
+    border: none;
+    padding: .2vw 2vw;
+    width: 75%;
+    outline: none;
+    font-size: 1vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 1vw;
+    gap: 2vw;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3E3E3E;
+    font-size: 1vw;
+}
+
+nav a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+nav ul li select{
+    padding: 0;
+    background-color: transparent;
+}
+@media(max-width: 768px) {
+
+    nav .search,
+    nav .row>.btn {
+        display: none;
+    }
+
+    nav ul {
+        position: fixed;
+        z-index: 9;
+        flex-direction: column;
+        padding: 3vw;
+        border-radius: 3vw;
+        box-shadow: 0 0 10px #3E3E3E;
+        backdrop-filter: blur(10px);
+        width: 80%;
+        left: 10%;
+        align-items: center;
+        top: -100vh;
+        -webkit-border-radius: 3vw;
+        -moz-border-radius: 3vw;
+        -ms-border-radius: 3vw;
+        -o-border-radius: 3vw;
+        transition: .2s;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+        -ms-transition: .2s;
+        -o-transition: .2s;
+}
+
+    nav ul.active {
+        top: 12vw;
+    }
+
+    nav a {
+        font-size: 4vw;
+    }
+
+    nav .container{
+        display: flex;
+        align-items: center;
+    }
+}

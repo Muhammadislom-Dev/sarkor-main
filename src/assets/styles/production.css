@@ -1,0 +1,61 @@
+.production {
+    padding: 15vw 0;
+    position: relative;
+    background-image: url(../img/k.png);
+    background-repeat: no-repeat;
+    background-size: 30vw;
+    background-position: center;
+    padding-bottom: 10vw;
+}
+
+.production .row {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.production .row img {
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    top: -4vw;
+}
+
+.production .col {
+    display: grid;
+    gap: 1vw;
+}
+
+.production .flex {
+    display: flex;
+    gap: 2vw;
+}
+
+.production p {
+    font-size: 1vw;
+    width: 80%;
+}
+
+@media(max-width: 768px) {
+    .production .row {
+        grid-template-columns: 100%;
+        padding-bottom: 50vw;
+
+    }
+
+    .production p {
+        font-size: 2vw;
+        margin: 2vw 0;
+    }
+
+    .production .row img {
+        position: absolute;
+        right: 0;
+        width: 50vw;
+        top:auto;
+        bottom: 0vw;
+    }
+    .production{
+        background-image: none;
+    }
+    
+}

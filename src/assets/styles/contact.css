@@ -1,0 +1,123 @@
+.contact {
+    padding: 5vw 0;
+}
+
+.contact p {
+    font-size: 1.6vw;
+    color: #156963;
+    width: 60%;
+}
+
+.contact .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+}
+
+.contact .flex {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.contact label {
+    color: #156963;
+    font-size: 1.2vw;
+    font-weight: 600;
+    padding-left: 1vw;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    border: 1px solid #1B6D67;
+    padding: 1vw;
+    border-radius: 2.3vw;
+    -webkit-border-radius: 2.3vw;
+    -moz-border-radius: 2.3vw;
+    -ms-border-radius: 2.3vw;
+    -o-border-radius: 2.3vw;
+    background-color: #fff;
+    width: 100%;
+}
+
+.contact button {
+    padding: 1vw 2vw;
+    margin-top: 1vw;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline-color: #33D9CD;
+}
+
+.contact .item__input {
+    display: grid;
+    gap: .4vw;
+    width: 100%;
+}
+
+.contact h1.title {
+    font-size: 4.3vw;
+    line-height: 2;
+    width: 100%;
+}
+
+.contact button:hover {
+    border-color: #33D9CD;
+    color: #33D9CD;
+    cursor: pointer;
+}
+
+.contact .phone {
+    position: relative;
+    text-align: center;
+}
+
+.contact .phone::after {
+    width: 17vw;
+    height: 30vw;
+    background-image: url(../img/phone.png);
+    content: "";
+    right: -10vw;
+    top: -6vw;
+    position: absolute;
+    background-size: cover;
+}
+
+@media(max-width: 768px) {
+    .contact .row>.col {
+        display: none;
+    }
+
+    .contact label {
+        font-size: 3.2vw;
+    }
+
+    .contact .row {
+        grid-template-columns: 100%;
+    }
+
+    .contact {
+        overflow: hidden;
+    }
+
+    .contact .phone::after {
+        width: 33vw;
+        height: 63vw;
+    }
+
+    .contact input,
+    .contact textarea,
+    .contact button {
+        padding: 2vw;
+        border-radius: 4vw;
+        -webkit-border-radius: 4vw;
+        -moz-border-radius: 4vw;
+        -ms-border-radius: 4vw;
+        -o-border-radius: 4vw;
+    }
+    .contact button {
+        width: 85vw;
+    }
+}
